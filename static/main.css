@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Monserrat');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body {
+  min-height: 2000px;
+  background: #F4F4F4;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  line-height: 78px;
+  letter-spacing: -0.015em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+  font-family: 'Comfortaa', sans-serif;
+  color: white;
+  width: 220px;
+  height: 40px;
+  left: 550px;
+  top: 500px;
+  background: #0DB60A;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+  background: white;
+  color: black;
+}
+
+.main-content {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.sub-content {
+  padding: 150px 15px;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 24px;
+}
+
+.nav.navbar-nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+}
+
+.lead {
+  padding: 10px 15px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.minor-lead {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
