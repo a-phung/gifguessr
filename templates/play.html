@@ -2,59 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Home Page</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 </head>
 
 <body>
-     <!-- Static navbar -->
-    <nav class="navbar navbar-light bg-light navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/home">gifGuessr</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/home">Home</a></li>
-            <li><a href="/home">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <!-- Main Content -->
+  <!-- Static navbar -->
+  <nav class="navbar navbar-light bg-light navbar-static-top">
     <div class="container">
-      <div class="main-content">
-          <p class="lead">Test Image</p>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home">gifGuessr</a>
       </div>
-    </div><!-- /.container -->
-     <!-- Picture Content -->
-    <div class="container">
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a href="/home">About</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="row main-content2">
+    <div class="col-md-3">
+      <p class="lead">Time: 1:00</p>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <p class="lead">Score: 0</p>
+    </div>
+  </div><!-- /.container -->
+  <!-- Picture Content -->
+  <div class="container">
+    <div class="main-content">
+      <img src={{ image_url }}>
       <div class="main-content">
-          <img src={{ image_url }}>
+        <p>Hint 1: {{ hint1 }}</p>
+        <input type="text" size="15" required="required" pattern={{ word1 }}>
+        <p>Hint 2: {{ hint2 }}</p>
+        <input type="text" size="15" required="required" pattern={{ word2 }}>
+        <p>Hint 3: {{ hint3 }}</p>
+        <input type="text" size="15" required="required" pattern={{ word3 }}>
       </div>
-    </div><!-- /.container -->
+    </div>
+  </div><!-- /.container -->
+  <!-- Picture Content -->
+  <div class="container d-flex justify-content-center text-center">
+    <div class="main-content">
+      <!-- Button -->
+      <a href="/play">
+        <button class="button" type="button">New Game</button>
+      </a>
+    </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- Load React. -->
+  <!-- TODO: Note: when deploying, replace "development.js" with "production.min.js". -->
+<!--  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>-->
+<!--  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>-->
+  <!-- Load our React component. -->
+<!--  <script src="like_button.js"></script>-->
+  <!-- Tell Flask where to look for the JS file. -->
+<!--  <script src="{{url_for('static', filename='like_button.js')}}"></script>-->
 </body>
 
 </html>

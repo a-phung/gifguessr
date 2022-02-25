@@ -2,73 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Home Page</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 </head>
 
 <body>
-     <!-- Static navbar -->
-    <nav class="navbar navbar-light bg-light navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/home">gifGuessr</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/home">Home</a></li>
-            <li><a href="/home">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <!-- Main Content -->
+  <!-- Static navbar -->
+  <nav class="navbar navbar-light bg-light navbar-static-top">
     <div class="container">
-      <div class="main-content">
-        <h1>gifGuessr</h1>
-          <p class="lead">A word game where you try to guess<br>
-              an image's related tags!
-          </p>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home">gifGuessr</a>
       </div>
-    </div><!-- /.container -->
-    <!-- Button -->
-    <div class="container d-flex justify-content-center text-center">
-        <a href="/play">
-            <button class="button" type="button">Play</button>
-        </a>
-    </div><!-- /.container -->
-    <!-- Sub content -->
-     <div class="container">
-      <div class="sub-content">
-          <p class="minor-lead"><u>Instructions</u><br>
-              Enter your guess in the text box and click submit.<br>
-              Try to correctly guess all three words!<br>
-              Guess all words correctly for each image,<br>
-              and a new image will be displayed!
-          </p>
-      </div>
-    </div><!-- /.container -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a href="/home">About</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="main-content">
+      <h1>gifGuessr</h1>
+        <p class="lead">A word guessing game played by finding<br>
+          the hidden words related to each image!</p>
+    </div>
+  </div><!-- /.container -->
+  <!-- Button -->
+  <div class="container d-flex justify-content-center text-center">
+    <a href="/play">
+      <button class="button" type="button">Play</button>
+    </a>
+  </div><!-- /.container -->
+  <!-- Sub content -->
+  <div class="container">
+    <div class="sub-content">
+      <p class="minor-lead"><u>Instructions</u><br>
+           Enter your guess in the text box and click submit.<br>
+           Try to correctly guess all three words!<br>
+           Guess all words correctly for each image,<br>
+           and a new image will be displayed!
+      </p>
+    </div>
+  </div><!-- /.container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 
 </html>

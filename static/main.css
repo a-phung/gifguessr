@@ -42,6 +42,11 @@ button {
   text-align: center;
 }
 
+.main-content2 {
+  padding: 10px 15px;
+  text-align: center;
+}
+
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.015em;
@@ -69,4 +74,10 @@ button {
   font-size: 15px;
 }
 
+input:invalid {
+  border: red solid 3px;
+}
 
+input:valid {
+  border: green solid 3px;
+}
