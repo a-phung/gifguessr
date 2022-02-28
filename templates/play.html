@@ -49,12 +49,13 @@
   <div class="container">
     <div class="main-content">
       <img src={{ image_url }}>
+      <p>Photo by <a href={{ user_url }}>{{ name }}</a> on <a href={{ credit_url }}>Unsplash</a></p>
       <div class="main-content">
-        <p>Hint 1: {{ hint1 }}</p>
+        <p>Anagram: {{ anagram1 }} & Hint ({{ hint_type1 }}): {{ hint1 }}</p>
         <input type="text" size="15" required="required" pattern={{ word1 }}>
-        <p>Hint 2: {{ hint2 }}</p>
+        <p>Anagram: {{ anagram2 }} & Hint ({{ hint_type2 }}): {{ hint2 }}</p>
         <input type="text" size="15" required="required" pattern={{ word2 }}>
-        <p>Hint 3: {{ hint3 }}</p>
+        <p>Anagram: {{ anagram3 }} & Hint ({{ hint_type3 }}): {{ hint3 }}</p>
         <input type="text" size="15" required="required" pattern={{ word3 }}>
       </div>
     </div>
