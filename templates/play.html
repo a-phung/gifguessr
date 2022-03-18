@@ -29,7 +29,6 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="/home">Home</a></li>
-          <li><a href="/home">About</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -48,15 +47,17 @@
   <!-- Picture Content -->
   <div class="container">
     <div class="main-content">
-      <img src={{ image_url }}>
-      <p>Photo by <a href={{ user_url }}>{{ name }}</a> on <a href={{ credit_url }}>Unsplash</a></p>
+      <div id="image">
+        <img src={{ data.image_url }}>
+        <p>Photo by <a href={{ data.user_url }}>{{ data.name }}</a> on <a href={{ data.credit_url }}>Unsplash</a></p>
+      </div>
       <div class="main-content">
-        <p>Anagram: {{ anagram1 }} & Hint ({{ hint_type1 }}): {{ hint1 }}</p>
-        <input type="text" size="15" required="required" pattern={{ word1 }}>
-        <p>Anagram: {{ anagram2 }} & Hint ({{ hint_type2 }}): {{ hint2 }}</p>
-        <input type="text" size="15" required="required" pattern={{ word2 }}>
-        <p>Anagram: {{ anagram3 }} & Hint ({{ hint_type3 }}): {{ hint3 }}</p>
-        <input type="text" size="15" required="required" pattern={{ word3 }}>
+        <p>Anagram: {{ data.anagram1 }} & Hint ({{ data.hint_type1 }}): {{ data.hint1 }}</p>
+        <input type="text" size="15" required="required" pattern={{ data.word1 }}>
+        <p>Anagram: {{ data.anagram2 }} & Hint ({{ data.hint_type2 }}): {{ data.hint2 }}</p>
+        <input type="text" size="15" required="required" pattern={{ data.word2 }}>
+        <p>Anagram: {{ data.anagram3 }} & Hint ({{ data.hint_type3 }}): {{ data.hint3 }}</p>
+        <input type="text" size="15" required="required" pattern={{ data.word3 }}>
       </div>
     </div>
   </div><!-- /.container -->
@@ -77,14 +78,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  <!-- Load React. -->
-  <!-- TODO: Note: when deploying, replace "development.js" with "production.min.js". -->
-<!--  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>-->
-<!--  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>-->
-  <!-- Load our React component. -->
-<!--  <script src="like_button.js"></script>-->
-  <!-- Tell Flask where to look for the JS file. -->
-<!--  <script src="{{url_for('static', filename='like_button.js')}}"></script>-->
 </body>
 
 </html>
