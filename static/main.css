@@ -73,6 +73,11 @@ button {
   font-size: 15px;
 }
 
+.hints {
+  font-weight: bold;
+  font-size: medium;
+}
+
 input:invalid {
   border: red solid 3px;
 }
