@@ -65,7 +65,7 @@ def shuffle_word(word):
 
 def microservice(jinja_data):
     """Calls teammate's microservice to get a hint for each word."""
-    hint_url = "https://word-hint-service.herokuapp.com/hints/" + jinja_data["word1"] + ',' + jinja_data["word2"] \
+    hint_url = "https://word-hint-microservice.herokuapp.com/" + jinja_data["word1"] + ',' + jinja_data["word2"] \
                + ',' + jinja_data["word3"]
     response = requests.get(hint_url)
     hint_json = response.json()
