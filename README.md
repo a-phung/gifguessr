@@ -4,10 +4,6 @@
 * [General Info](#general-info)
 * [Website Details](#website-details)
 * [Technologies](#technologies)
-* [Setup](#setup)
-* [Team](#team)
-* [Credits](#credits)
-* [License](#license)
 
 ## General Info
 gifGuessr is an image-word guessing game involving anagrams, rhymes, synonyms, and syllables! Guesses are entered in the text box and a correct guess will turn the box border from a red outline to a green outline. Hints are provided for each of the three words that are associated with the related image.\
