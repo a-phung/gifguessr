@@ -12,6 +12,7 @@ The software project is designed using the microservices architecture. The proje
 
 ## Website Details
 Main application link: https://gifguessr.herokuapp.com/
+\
 Microservice link: https://image-microservice-us.herokuapp.com/
 
 https://user-images.githubusercontent.com/72109757/171080161-da1a60ca-ba7e-4860-92a8-66408b0841ec.mp4
